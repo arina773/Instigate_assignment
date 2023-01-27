@@ -68,5 +68,4 @@ diffs = []
 report = set()
 path1, path2 = Path(sys.argv[1]), Path(sys.argv[2])
 main(path1, path2)
-print(f"{'--'.join(sorted(report))}")
 # C:/Users/Arina/Desktop/Main/out C:/Users/Arina/Desktop/Main/golden
