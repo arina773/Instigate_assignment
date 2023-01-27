@@ -39,7 +39,7 @@ def walk_in_dir(path1, path2, dir_name1, dir_name2, files1, files2):  # iteratin
                 report.add(f"{file_name2.upper()} is not in {dir_name1.upper()} directory")
 
 
-def html_report(path):
+def html_report(path): # generates html report file
     html_content = f"<b>Here is the report</b> <br/>{'<br/>'.join(sorted(report))}<br/>"
     with open(Path(f"{path}/report.html"), "w") as f:
         f.write(html_content)
